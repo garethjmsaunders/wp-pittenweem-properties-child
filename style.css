@@ -5,13 +5,13 @@ Description:  Divi child theme for Pittenweem Properties
 Author:       Gareth J M Saunders
 Author URI:   http://www.garethjmsaunders.co.uk/
 Template:     Divi
-Version:      3.3.0
+Version:      3.4.0
 Tags:         light, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  divi-child
 
-Colours       Grey       #eeeeee
-              Turquoise  #3daeb7 DEPRECATED
-              Light blue #74a7ff
+Colours       Grey          #eeeeee
+              Dark grey     #777777
+              PP logo blue  #9ab1d0
 */
 
 
@@ -60,7 +60,7 @@ h3 {
     @version    2.0.0
 */
 .contact-form-7__submit-button {
-   background-color: #3daeb7 !important; /* Pittenweem Properties turquoise */
+   background-color: #9ab1d0 !important; /* PP logo blue */
 }
 .contact-form-7__submit-button:hover {
     background-color: #777 !important;   /* Dark grey */
@@ -121,13 +121,12 @@ h3 {
  */
 .et_pb_widget a[href^="mailto:"]:link,
 .et_pb_widget a[href^="mailto:"]:visited {
-    color: #fff;
+    color: white;
 }
 .et_pb_widget a[href^="mailto:"]:hover,
 .et_pb_widget a[href^="mailto:"]:active,
 .et_pb_widget a[href^="mailto:"]:focus {
-    /* color: #3daeb7; */
-    color: #74a7ff;
+    color: #9ab1d0; /* PP logo blue */
 }
 
 
@@ -139,6 +138,6 @@ h3 {
 */
 
 .widget_search #searchsubmit {
-    background-color: #3daeb7;
+    background-color: #9ab1d0; /* PP logo blue */
     color: white;
 }
