@@ -1,0 +1,144 @@
+/*
+Theme Name:   Divi child | Pittenweem Properties
+Theme URI:    http://www.pittenweemproperties.com/
+Description:  Divi child theme for Pittenweem Properties
+Author:       Gareth J M Saunders
+Author URI:   http://www.garethjmsaunders.co.uk/
+Template:     Divi
+Version:      3.3.0
+Tags:         light, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  divi-child
+
+Colours       Grey       #eeeeee
+              Turquoise  #3daeb7 DEPRECATED
+              Light blue #74a7ff
+*/
+
+
+/* 1. BASE ===============================================
+*/
+
+h3 {
+    margin: 2em 0 .5em 0;
+}
+
+
+/* 2. LAYOUT =============================================
+*/
+
+
+
+/* 3. MODULES ============================================
+*/
+
+/** Fullwidth Slider Module dark glass
+    Dark glass (transparent black) effect background on slider titles.
+    For use on fullwidth slider modules, apply class
+    `module__fullwidth-slider--dark-glass` to grey fullwidth slider module
+    settings (not to purple section or individual slides).
+
+    @module     Divi Fullwidth Slider Module
+    @example    Home, property pages
+    @version    3.0.0
+*/
+
+.module__fullwidth-slider--dark-glass .et_pb_slide_description h2,
+.module__fullwidth-slider--dark-glass .et_pb_slide_description p {
+    display: block;
+    width: 100%;
+    background-color: rgba(0,0,0, .5);
+    padding: 5px;
+}
+
+
+
+/** Contact Form 7 -- Submit button
+    Customise look and feel of contact form
+
+    @module     Contact Form 7
+    @example    /how-to-book
+    @version    2.0.0
+*/
+.contact-form-7__submit-button {
+   background-color: #3daeb7 !important; /* Pittenweem Properties turquoise */
+}
+.contact-form-7__submit-button:hover {
+    background-color: #777 !important;   /* Dark grey */
+}
+
+/* Make submit button shorter (not full width)
+   !HACK: The default styles for the plugin includes !important (?!) */
+.et_pb_contact p input.contact-form-7__submit-button {
+    color: white !important; /* !HACK */
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px !important; /* !HACK */
+}
+
+/* More space around checkboxes */
+.contactform7__form__checkboxes {
+    padding: 1em 0;
+}
+/* Show checkboxes one per line */
+.contactform7__form__checkboxes .wpcf7-list-item {
+    display: block;
+}
+
+
+
+/* 4. STATE ==============================================
+*/
+
+/** Testimonial module -- large, fullwidth quote
+    For use on blue sections, apply `testimonial--large` class
+    to section settings (not testimonial module).
+
+    @module     Divi testimonial
+    @example    Home, property pages
+    @version    1.0.0
+*/
+
+.section__testimonial--large .et_pb_section.et_pb_section {
+    padding: 25px 0;
+}
+.section__testimonial--large .et_pb_testimonial_description p {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 200;
+    padding-bottom: 0;
+}
+
+
+
+
+/* 5. THEME ==============================================
+*/
+
+/*  Email colour on fat footer
+    @module     WordPress default text widget
+    @example    All pages
+    @version    1.0.0
+ */
+.et_pb_widget a[href^="mailto:"]:link,
+.et_pb_widget a[href^="mailto:"]:visited {
+    color: #fff;
+}
+.et_pb_widget a[href^="mailto:"]:hover,
+.et_pb_widget a[href^="mailto:"]:active,
+.et_pb_widget a[href^="mailto:"]:focus {
+    /* color: #3daeb7; */
+    color: #74a7ff;
+}
+
+
+
+/*  Search button in footer
+    @module     WordPress default search widget
+    @example    All pages
+    @version    1.0.0
+*/
+
+.widget_search #searchsubmit {
+    background-color: #3daeb7;
+    color: white;
+}
