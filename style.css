@@ -131,6 +131,19 @@ h3 {
 
 
 
+/*  Headings in footer
+    @module     WordPress footer widgets
+    @example    All pages
+    @version    1.0.0
+    @since      3.4.0
+*/
+
+.footer-widget h4 {
+    color: #9ab1d0; /* PP logo blue */
+}
+
+
+
 /*  Search button in footer
     @module     WordPress default search widget
     @example    All pages
