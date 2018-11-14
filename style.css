@@ -5,13 +5,13 @@ Description:  Divi child theme for Pittenweem Properties
 Author:       Gareth J M Saunders
 Author URI:   http://www.garethjmsaunders.co.uk/
 Template:     Divi
-Version:      3.4.0
+Version:      3.5.0
 Tags:         light, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  divi-child
 
 Colours       Grey          #eeeeee
               Dark grey     #777777
-              PP logo blue  #9ab1d0
+              Light blue    #9ab1d0
 */
 
 
@@ -25,6 +25,21 @@ h3 {
 
 /* 2. LAYOUT =============================================
 */
+
+
+/** Divi navigation menu widget
+    Fix issue with some menus floating beside one another
+
+    @module     Divi navigation menu widget
+    @example    All pages
+    @version    1.0.0
+    @since      3.5.0
+*/
+
+.et_pb_widget {
+    width: 100%
+}
+
 
 
 
@@ -110,24 +125,49 @@ h3 {
 
 
 
+/** Help user know which properties they have visited
+    by setting visited state in fat footer.
+
+    @module     Divi navigation menu widget
+    @example    All pages
+    @version    1.0.0
+    @since      3.5.0
+*/
+
+.footer-widget li a:hover {
+    text-decoration: underline !important;
+}
+
+.footer-widget li a:visited {
+    color: #9ab1d0 !important;
+}
+
+
+
 
 /* 5. THEME ==============================================
 */
 
-/*  Email colour on fat footer
+/*  Email colour in fat footer -- make it more interactive
     @module     WordPress default text widget
     @example    All pages
-    @version    1.0.0
+    @version    2.0.0
+    @since      3.5.0
  */
+
 .et_pb_widget a[href^="mailto:"]:link,
 .et_pb_widget a[href^="mailto:"]:visited {
-    color: white;
+    color: #9ab1d0 !important;
+    text-decoration: underline;
 }
+
 .et_pb_widget a[href^="mailto:"]:hover,
 .et_pb_widget a[href^="mailto:"]:active,
 .et_pb_widget a[href^="mailto:"]:focus {
-    color: #9ab1d0; /* PP logo blue */
+    color: white !important;
+    text-decoration: none;
 }
+
 
 
 
