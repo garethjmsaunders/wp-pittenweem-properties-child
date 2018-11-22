@@ -5,13 +5,14 @@ Description:  Divi child theme for Pittenweem Properties
 Author:       Gareth J M Saunders
 Author URI:   http://www.garethjmsaunders.co.uk/
 Template:     Divi
-Version:      3.5.0
+Version:      3.6.0
 Tags:         light, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  divi-child
 
 Colours       Grey          #eeeeee
               Dark grey     #777777
               Light blue    #9ab1d0
+              Light grey    #bbbbbb
 */
 
 
@@ -139,7 +140,7 @@ h3 {
 }
 
 .footer-widget li a:visited {
-    color: #9ab1d0 !important;
+    color: #bbbbbb !important;
 }
 
 
