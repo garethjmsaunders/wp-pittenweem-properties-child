@@ -47,6 +47,33 @@ h3 {
 /* 3. MODULES ============================================
 */
 
+
+/** Homepage hero banner
+    Add shadow to homepage hero banner title
+
+    @module     Divi Fullwidth Slider Module
+    @example    Home
+    @version    1.0.0
+*/
+
+.et_pb_slide_title,
+.et_pb_slide_content {
+    text-shadow: 0px 4px 3px rgba(0,0,0,1),
+             0px 8px 13px rgba(0,0,0,1),
+             0px 18px 23px rgba(0,0,0,1);
+}
+
+/** Hover effect - lighten shadow
+    This should be in STATE but moved here to keep things simpler
+ */
+.et_pb_slide_description .et_pb_slide_title a:focus,
+.et_pb_slide_description .et_pb_slide_title a:hover {
+    color: #ffffff;
+    text-shadow: 0px 4px 3px rgba(105,105,105,1), 0px 8px 13px rgba(105,105,105,1), 0px 18px 23px rgba(105,105,105,1);
+}
+
+
+
 /** Fullwidth Slider Module dark glass
     Dark glass (transparent black) effect background on slider titles.
     For use on fullwidth slider modules, apply class
