@@ -222,3 +222,14 @@ h3 {
     background-color: #9ab1d0; /* PP logo blue */
     color: white;
 }
+
+
+/*  Grey background for modules
+    @module     Fullwidth Header Module
+    @example    COVID-19
+    @version    1.0.0
+*/
+
+#grey-background {
+    background: #eeeeee !important;
+}
