@@ -128,6 +128,12 @@ h3 {
 }
 
 
+/* Pagination for search results page */
+.pagination .alignleft {
+    margin-right: 1em;
+}
+
+
 
 /* 4. STATE ==============================================
 */
