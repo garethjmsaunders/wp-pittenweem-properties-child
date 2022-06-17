@@ -5,7 +5,7 @@ Description:  Divi child theme for Pittenweem Properties
 Author:       Gareth J M Saunders
 Author URI:   http://www.garethjmsaunders.co.uk/
 Template:     Divi
-Version:      3.6.1
+Version:      3.7.0
 Tags:         light, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  divi-child
 
@@ -80,7 +80,7 @@ h3 {
     `module__fullwidth-slider--dark-glass` to grey fullwidth slider module
     settings (not to purple section or individual slides).
 
-    @module     Divi Fullwidth Slider Module
+    @module     Divi Fullwidth Slider module
     @example    Home, property pages
     @version    3.0.0
 */
@@ -91,6 +91,32 @@ h3 {
     width: 100%;
     background-color: rgba(0,0,0, .5);
     padding: 5px;
+}
+
+
+/** Page header links
+    Used on town roperties pages to direct users to other towns
+
+    @module     Divi Fullwidth Header module
+    @example    https://www.pittenweemproperties.com/properties/st-monans-properties/
+    @version    1.0.0
+    @since      3.7.0
+*/
+
+.et_pb_header_content_wrapper p {
+    color: white;
+    font-size: 1.1em;
+}
+
+.et_pb_header_content_wrapper a:link,
+.et_pb_header_content_wrapper a:visited {
+    color:white;
+    text-decoration: underline;
+}
+
+.et_pb_header_content_wrapper a:hover,
+.et_pb_header_content_wrapper a:active {
+    text-decoration: none;
 }
 
 
@@ -126,6 +152,23 @@ h3 {
 .contactform7__form__checkboxes .wpcf7-list-item {
     display: block;
 }
+
+
+
+/** Google Map popup dialogs
+    Default popup dialogs had an online set which obscured the link text
+
+    @module     Divi Map module
+    @example    https://www.pittenweemproperties.com/properties/st-monans-properties/
+    @version    1.0.0
+    @since      3.7.0
+*/
+
+.infowindow a {
+    color:black;
+    outline: none;
+  }
+
 
 
 /* Pagination for search results page 
