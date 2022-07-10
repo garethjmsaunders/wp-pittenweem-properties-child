@@ -5,7 +5,7 @@ Description:  Divi child theme for Pittenweem Properties
 Author:       Gareth J M Saunders
 Author URI:   http://www.garethjmsaunders.co.uk/
 Template:     Divi
-Version:      3.7.0
+Version:      3.8.0
 Tags:         light, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  divi-child
 
@@ -63,6 +63,22 @@ h3 {
              0px 18px 23px rgba(0,0,0,1);
 }
 
+.et_pb_slide_content p {
+    font-size: 1.5em;
+}
+
+.et_pb_slide_content a:link,
+.et_pb_slide_content a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.et_pb_slide_content a:hover,
+.et_pb_slide_content a:active {
+    color: white;
+    text-decoration: underline;
+}
+
 /** Hover effect - lighten shadow
     This should be in STATE but moved here to keep things simpler
  */
@@ -70,6 +86,14 @@ h3 {
 .et_pb_slide_description .et_pb_slide_title a:hover {
     color: #ffffff;
     text-shadow: 0px 4px 3px rgba(105,105,105,1), 0px 8px 13px rgba(105,105,105,1), 0px 18px 23px rgba(105,105,105,1);
+}
+
+
+/* Reduce homepage header text on mobile */
+@media (max-width: 767px) {
+    h2.et_pb_slide_title {
+        font-size: 30px !important;
+    }
 }
 
 
