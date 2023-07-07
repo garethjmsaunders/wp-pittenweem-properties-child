@@ -5,7 +5,7 @@ Description:  Divi child theme for Pittenweem Properties
 Author:       Gareth J M Saunders
 Author URI:   http://www.garethjmsaunders.co.uk/
 Template:     Divi
-Version:      3.9.0
+Version:      3.10.0
 Tags:         light, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  divi-child
 
@@ -145,40 +145,6 @@ h3 {
 
 
 
-/** Contact Form 7 -- Submit button
-    Customise look and feel of contact form
-
-    @module     Contact Form 7
-    @example    /how-to-book
-    @version    2.0.0
-*/
-.contact-form-7__submit-button {
-   background-color: #9ab1d0 !important; /* PP logo blue */
-}
-.contact-form-7__submit-button:hover {
-    background-color: #777 !important;   /* Dark grey */
-}
-
-/* Make submit button shorter (not full width)
-   !HACK: The default styles for the plugin includes !important (?!) */
-.et_pb_contact p input.contact-form-7__submit-button {
-    color: white !important; /* !HACK */
-    cursor: pointer;
-    font-weight: bold;
-    width: 200px !important; /* !HACK */
-}
-
-/* More space around checkboxes */
-.contactform7__form__checkboxes {
-    padding: 1em 0;
-}
-/* Show checkboxes one per line */
-.contactform7__form__checkboxes .wpcf7-list-item {
-    display: block;
-}
-
-
-
 /** Google Map popup dialogs
     Default popup dialogs had an online set which obscured the link text
 
@@ -195,7 +161,7 @@ h3 {
 
 
 
-/* Pagination for search results page 
+/** Pagination for search results page 
     @version    1.0.0
     @from       3.6.1
 */
@@ -204,14 +170,31 @@ h3 {
 }
 
 
-/* Blog posts: Align image to top 
-   @module      Divi Toolbox option
-   @example     Blog
-   @version     1.0.0
+
+/** Blog posts: Align image to top 
+    @module      Divi Toolbox option
+    @example     https://www.pittenweemproperties.com/blog/
+    @version     1.1.0
+    @since       3.9.0
 */
 
-.dtb_archives .et_pb_post, .dtb-blog.et_pb_module .et_pb_post {
+.dtb_archives:not(.et-tb-has-body) .et_pb_post,
+.dtb_archives .et_pb_post,
+.dtb-blog.et_pb_module .et_pb_post {
     align-items: normal;
+}
+
+
+
+/** Footer: Social media - Rremove padding on social media icons 
+    @module     Widgets
+    @example    https://www.pittenweemproperties.com/
+    @version    1.0.0
+    @since      3.10.0
+*/
+
+#footer-widgets li.wp-social-link {
+   padding-left: 0 !important;
 }
 
 
@@ -257,6 +240,23 @@ h3 {
     color: #bbbbbb !important;
 }
 
+
+/** Map pop-up info window
+ *  Resolves issue on properties map pages. Map points with multiple
+ *  properties, only the first property is underlined. Issue #923
+    @module     Divi navigation menu widget
+    @example    https://www.pittenweemproperties.com/properties/anstruther-properties/
+    @version    1.0.0
+    @since      3.10.0
+*/
+
+.infowindow a {
+    text-decoration: underline;
+}
+
+.infowindow a:hover {
+    text-decoration: none;
+}
 
 
 
