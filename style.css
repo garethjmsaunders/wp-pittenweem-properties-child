@@ -181,7 +181,11 @@ h3 {
 .dtb_archives:not(.et-tb-has-body) .et_pb_post,
 .dtb_archives .et_pb_post,
 .dtb-blog.et_pb_module .et_pb_post {
-    align-items: normal;
+    align-items: normal !important;
+}
+
+.dtb-post-wrap {
+    justify-content: normal !important;
 }
 
 
