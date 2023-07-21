@@ -5,7 +5,7 @@ Description:  Divi child theme for Pittenweem Properties
 Author:       Gareth J M Saunders
 Author URI:   http://www.garethjmsaunders.co.uk/
 Template:     Divi
-Version:      3.10.0
+Version:      3.11.0
 Tags:         light, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  divi-child
 
@@ -186,6 +186,18 @@ h3 {
 
 .dtb-post-wrap {
     justify-content: normal !important;
+}
+
+
+/** Floor plan heading: reduce gap between heading and image
+    @module      Blurb
+    @example     https://www.pittenweemproperties.com/property/{property-name}/
+    @version     1.0.0
+    @since       3.11.0
+*/
+
+.floor-plan-heading {
+    margin-bottom: 0px !important;
 }
 
 
