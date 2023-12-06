@@ -5,7 +5,7 @@ Description:  Divi child theme for Pittenweem Properties
 Author:       Gareth J M Saunders
 Author URI:   http://www.garethjmsaunders.co.uk/
 Template:     Divi
-Version:      3.12.0
+Version:      3.13.0
 Tags:         light, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  divi-child
 
@@ -344,4 +344,18 @@ h3 {
 
 #footer-widgets li.wp-social-link:before {
    border-width: 0;
+}
+
+
+/* Fat footer search button
+ * Now AA and AAA compliant */
+
+#search-3 input#searchsubmit {
+    color: #222222;
+}
+
+
+/* Copyright footer */
+#footer-info, #footer-info a {
+    color: #b6b6b6;
 }

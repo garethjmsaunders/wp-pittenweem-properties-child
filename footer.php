@@ -32,7 +32,7 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 									get_template_part( 'includes/social_icons', 'footer' );
 								}
 							?>
-							<p id="footer-info">Copyright © <?php echo date('Y'); ?> <strong>Pittenweem Properties</strong></p>
+							<p id="footer-info">Copyright © <?php echo date('Y'); ?> <a href="https://pittenweemproperties.com/">Pittenweem Properties</a> &middot; Website by <a href="https://digitalshed45.co.uk">Digital Shed45</a></p>
 						</div>
 					</div>
 					</div>	<!-- .container -->
