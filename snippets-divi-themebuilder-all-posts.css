@@ -1,0 +1,120 @@
+/* Fix Divi Pagebuilder module alignments for All Posts 
+ *
+ * @package Divi - Theme Builder - All Posts - Section - Advanced - Custom CSS
+ * @example https://www.pittenweemproperties.com/2024/07/whats-on-in-august-2024/
+ * @version v1.0.0 2024-07-31
+ * @since v3.14.0 2024-07-31
+ */
+
+/* (1) Width: Blog post content is set to 80% not 100% */
+
+/* Large screen */
+@media only screen and (min-width: 1350px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_row {
+		width: 98%;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 981px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_row {
+		width:98%;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_row {
+		width:95%;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+/* Phone */
+@media only screen and (max-width: 767px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_row {
+		width:95%;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+
+/* (2) Height: Padding of 57px/4% is added to the top */
+
+/* Large screen */
+@media only screen and (min-width: 1350px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_section {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 981px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_section {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_section {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+/* Phone */
+@media only screen and (max-width: 767px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_section {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+/* (3) Post heading: Doesn't align or move in sync with post */
+
+/* Default */
+h1.et_pb_module_heading {
+	margin: 1em 0;
+}
+
+/* Large screen */
+@media only screen and (min-width: 1350px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_section {
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 981px) {
+	body.et_pb_pagebuilder_layout div#main-content .et_pb_section {
+	}
+}
+
+
+/* Tablet - magic number! */
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+	h1.et_pb_module_heading {
+		margin-left: 15px;
+	}
+}
+
+/* Phone */
+@media only screen and (max-width: 767px) {
+	h1.et_pb_module_heading {
+		margin-left: 15px;
+	}
+}
+
+
+/* (4) Add space above and below dates and location */
+.whatson-dates-location {
+  padding-bottom: 1em !important;
+}
